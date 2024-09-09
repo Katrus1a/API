@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends
 from pydantic import  BaseModel
 from typing import Optional, Annotated
 from contextlib import asynccontextmanager
-from datebase import   create_tables
+from datebase import create_tables
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
